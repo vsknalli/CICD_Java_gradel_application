@@ -42,16 +42,6 @@ pipeline{
             }
         }
 
-stage("install helm"){
-    steps{
-         sh 'wget https://get.helm.sh/helm-v3.8.2-linux-arm64.tar.gz'
-         sh 'ls -a'
-         sh 'tar -xvzf helm-v3.8.2-linux-arm64.tar.gz'
-         sh 'sudo cp linux-arm64/helm /usr/bin'
-         sh 'helm version'
-    }
-}
-
 
 
         stage('indentifying misconfigs using datree in helm charts'){
