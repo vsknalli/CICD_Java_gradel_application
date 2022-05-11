@@ -42,11 +42,11 @@ pipeline{
             }
         }
 
-        stage("Install dartree plugin"){
-            steps{
-                 sh 'helm plugin install https://github.com/datreeio/helm-datree'
-            }
-        }
+//        stage("Install dartree plugin"){
+//            steps{
+//                 sh 'helm plugin install https://github.com/datreeio/helm-datree'
+//            }
+//        }
 
 
 
